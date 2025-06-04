@@ -16,6 +16,19 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+#
+# Valores por defecto
+#
+
+VERSION=0.2
+TEMP_WARN=50
+TEMP_CRIT=60
+LANG=0
+TYPE_FILTER=
+
+#
+# Funciones
+#
 
 print_help() {
   echo "Uso: $0 -H <host> -u <usuario> -p <contraseña> [-w <temp_warn>] [-c <temp_crit>] [-t tipo] [-l <lang>]"
@@ -31,20 +44,6 @@ print_help() {
   echo "  -h  Mostrar ayuda"
   exit 3
 }
-
-#
-# Valores por defecto
-#
-
-VERSION=0.2
-TEMP_WARN=50
-TEMP_CRIT=60
-LANG=0
-TYPE_FILTER=
-
-#
-# Funciones
-#
 
 cleanup() {
   if [[ -n "$LOGIN_UID" ]]; then
