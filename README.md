@@ -2,7 +2,7 @@
 Plugin de monitorización de switches 3Com 4210G vía Web para Nagios
 
 ## Uso
-
+```
 Uso: check_3com_4210g.sh -H <host> -u <usuario> -p <contraseña> -t tipo [-w <temp_warn>] [-c <temp_crit>] [-l <lang>]
 
 Opciones:
@@ -14,3 +14,4 @@ Opciones:
   -t  Tipo de entidad a monitorear: PSU, FAN o TEMP (requerido)
   -l  Idioma (default: 0)
   -h  Mostrar ayuda
+```
