@@ -31,7 +31,7 @@ TYPE_FILTER=
 #
 
 print_help() {
-  echo "Uso: $0 -H <host> -u <usuario> -p <contraseña> [-w <temp_warn>] [-c <temp_crit>] [-t tipo] [-l <lang>]"
+  echo "Uso: ${0##*/} -H <host> -u <usuario> -p <contraseña> -t tipo [-w <temp_warn>] [-c <temp_crit>] [-l <lang>]"
   echo ""
   echo "Opciones:"
   echo "  -H  IP o hostname del switch (requerido)"
